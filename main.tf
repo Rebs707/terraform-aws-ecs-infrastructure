@@ -7,3 +7,7 @@ resource "aws_ecr_repository" "app" {
 
   image_tag_mutability = "MUTABLE"
 }
+
+resource "aws_ecs_cluster" "main" {
+  name = "terraform-ecs-cluster"
+}
